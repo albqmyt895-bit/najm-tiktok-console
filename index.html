@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>NAJM | TikTok Console</title>
+<style>
+:root {
+  --gold: #d4af37;
+  --black: #080808;
+  --panel: #141414;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 20%, #33280c 0%, transparent 55%),
+    var(--black);
+  color: #f7f2e5;
+  font-family: Tahoma, Arial, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 24px 6%;
+  border-bottom: 1px solid #5b4920;
+}
+.logo {
+  color: var(--gold);
+  font-size: clamp(22px, 4vw, 34px);
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.tag {
+  border: 1px solid #8b7028;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #e9d79b;
+  font-size: 14px;
+}
+main {
+  width: min(900px, 92%);
+  margin: 55px auto;
+  text-align: center;
+}
+.emblem {
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 25px;
+  border: 2px solid var(--gold);
+  border-radius: 25px;
+  box-shadow: 0 0 35px #d4af3725;
+  color: var(--gold);
+  font-size: 43px;
+}
+h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  margin: 15px 0;
+}
+h1 span { color: var(--gold); }
+.desc {
+  color: #c4c0b6;
+  line-height: 2;
+  font-size: clamp(15px, 2vw, 19px);
+  max-width: 650px;
+  margin: 18px auto 30px;
+}
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 35px 0;
+}
+.btn {
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  border: 2px solid #5d4b20;
+  border-radius: 16px;
+  background: var(--panel);
+  color: #f8f0d7;
+  text-decoration: none;
+  font-size: clamp(16px, 2.2vw, 20px);
+  font-weight: bold;
+  transition: .15s;
+}
+.btn.primary {
+  background: linear-gradient(120deg, #f0d77e, #b28b23);
+  color: #171205;
+  border-color: #ffe8a0;
+}
+.btn:focus-visible, .btn:hover {
+  outline: 3px solid #fff0b0;
+  outline-offset: 5px;
+  border-color: #ffe8a0;
+  transform: scale(1.025);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 42px;
+}
+.card {
+  background: #111;
+  border: 1px solid #41351a;
+  border-radius: 16px;
+  padding: 24px 12px;
+}
+.card .symbol {
+  color: var(--gold);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.card strong { display: block; }
+.card p {
+  color: #aaa69b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.notice {
+  margin-top: 30px;
+  padding: 17px;
+  background: #11150f;
+  border: 1px solid #39432a;
+  border-radius: 14px;
+  color: #d6e0c6;
+  line-height: 1.9;
+}
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #777267;
+  font-size: 13px;
+}
+@media(max-width:600px) {
+  header { padding: 18px 4%; }
+  main { margin: 38px auto; }
+  .actions { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .card { padding: 17px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">NAJM ✦</div>
+  <div class="tag">وضع السوني PS4</div>
+</header>
+
+<main>
+  <div class="emblem">✦</div>
+  <h1>تيك توك، من شاشة <span>السوني</span></h1>
+  <p class="desc">
+    بوابتك للوصول إلى تيك توك من شاشة التلفزيون،
+    بتصميم ملكي وتحكم مريح باستخدام يد البلايستيشن.
+  </p>
+
+  <div class="actions">
+    <a class="btn primary"
+       href="https://www.tiktok.com/login"
+       target="_blank" rel="noopener noreferrer">
+      تسجيل الدخول عبر TikTok الرسمي ↗
+    </a>
+    <a class="btn"
+       href="https://www.tiktok.com/"
+       target="_blank" rel="noopener noreferrer">
+      فتح تيك توك ↗
+    </a>
+    <a class="btn"
+       href="https://www.tiktok.com/messages"
+       target="_blank" rel="noopener noreferrer">
+      تجربة فتح الرسائل ↗
+    </a>
+    <a class="btn"
+       href="#security">
+      معلومات الأمان
+    </a>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="symbol">◎</div>
+      <strong>حسابك الرسمي</strong>
+      <p>انتقل إلى تسجيل الدخول لدى تيك توك نفسه.</p>
+    </div>
+    <div class="card">
+      <div class="symbol">✉</div>
+      <strong>الرسائل</strong>
+      <p>جرّب صفحة الرسائل الرسمية؛ توفرها يعتمد على دعم تيك توك والمتصفح.</p>
+    </div>
+    <div class="card">
+      <div class="symbol">⌘</div>
+      <strong>تحكم أسهل</strong>
+      <p>أزرار كبيرة ومحددة بوضوح لتسهيل التنقل.</p>
+    </div>
+  </div>
+
+  <div class="notice" id="security">
+    🔒 الأمان أولًا<br>
+    تسجيل الدخول يتم على موقع TikTok الرسمي.
+    لن يطلب هذا الموقع كلمة مرورك أو رمز التحقق.
+  </div>
+</main>
+
+<footer>
+  NAJM • TIKTOK CONSOLE — مشروع مستقل غير تابع لتيك توك
+</footer>
+</body>
+</html>
